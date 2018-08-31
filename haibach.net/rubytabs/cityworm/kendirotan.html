@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<head>
+
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="One of the best Tabs - Slider jQuery plugins">
+    <meta name="keywords" content="tabs, slider, carousel, gallery, touch, swipe, drag, css3, responsive, nested, multi, transform, transition, lazyload, fullscreen">
+    <meta name="author" content="RubyTabs - HaiBach">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  
+    <title>FULLWIDTH LAYOUT | RUBYTABS</title>
+
+   
+    <link rel="shortcut icon" href="scripts/libs/imgs/icons/favicon.ico">
+  <link rel="stylesheet" href="scripts/fontawesome/css/all.css">
+
+
+   
+    <link rel="stylesheet" href="scripts/libs/css/ruby00.css">
+    <link rel="stylesheet" href="scripts/libs/css/ruby01.css">
+    <link rel="stylesheet" href="scripts/libs/css/styles.custom.css">
+    <link rel="stylesheet" href="scripts/ruby/rubytabs.css">
+    <link rel="stylesheet" href="scripts/css/genel.css">
+
+
+    <script src="scripts/libs/scripts/modernizr.js"></script>
+    
+</head>
+<body>
+   <div class="container navbar" style="height: 45px;padding-top: 5px;position: fixed;top:0px;width: 100%;z-index: 1;background-color: white">
+      <div class="row2">
+          <p></p>
+          <p style="color:#8BC34A"><span style="color:#2196F3"><b>C</b>ity</span><b>W</b>orm</p>
+          <p style="text-align: right;"><i class="fas fa-search fa-2x"></i></p>
+      </div>
+    </div>
+    <div class="wrapper" >
+
+     
+        
+      
+        <style>
+            .tabs-preview > .rt01tabs.rt01pag {
+                margin-bottom: 0;position: fixed;top:45px;background-color: #fff;
+            }
+            .tabs-preview > .rt01viewport {
+                padding-top: 50px; padding-bottom: 20px;
+                background: #f9f9f9 url(../libs/imgs/pattern_wavegrid.png) repeat;
+            }
+            @media only screen and (max-width: 479px) {
+                .tabs-preview > .rt01viewport {
+                    padding-top: 80px; padding-bottom: 0;
+                }
+            }
+ 
+            .row {
+    width:100%;
+    padding:4px;
+    margin:2px;
+    border-radius: 25px;
+    background-color:#fff;
+} 
+
+.left {
+    float:left;
+    width:150px;
+}
+
+.right {
+    float:right;
+    padding-right: 15px;
+}
+
+.clear {
+    clear:both;
+}
+.Temizle{
+        position:fixed;
+        bottom:10%;
+        margin-left: auto;
+        margin-right: auto;
+        left:20%;
+        background-color:#4267b2;
+        border-radius: 12px;
+    }
+    .RotayiKaydet{
+        position:fixed;
+        bottom:10%;
+        margin-left: auto;
+        margin-right: auto;
+        right: 20%;
+        background-color:#4267b2;
+        border-radius: 12px;
+        line-height: 0px;
+
+
+    }
+    .hovermenu a:hover {
+    background: #fff;
+    color: black;
+    }
+
+    .hovermenu a.active {
+    background-color: #fff;
+    color: white !important;
+    }
+    .hovermenu a {
+    float: left;
+    display: block;
+    color: #fff !important;
+    text-align: center;
+    width: 50%;
+padding-bottom:0px;
+    background-color: #ffa633;;
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    }
+    
+        </style>
+
+        <div class="tabs-preview rt01 rt01flat"
+            data-tabs='{
+                "fx"    : "line",
+                "speed" : 600,
+                "pag"   : { "align": "center" }
+            }' >
+
+
+            <div>
+                <div class="rt01pagitem">Kendi Turunu Tasarla</div>
+                           <div>
+                
+                            <label>
+                                <div class="row">
+                                
+                                  <div class="left">
+                                      <input type="checkbox" class="cb-element" value="1" id="bina1" onclick="myFunction()"/>  
+                                      <img src="images/bina/1.jpg" style="width: 100px">  
+                                  </div>
+                                    
+                                  <div class="right">
+                                      This is First Record    
+                                  </div>    
+                                 
+                                    <div class="clear"></div>    
+                                    
+                                </div>
+                                </label>
+                                
+                                <label>
+                                    <div class="row">
+                                    
+                                      <div class="left">
+                                          <input type="checkbox" class="cb-element" value="1" id="bina2" onclick="myFunction()" />  
+                                          <img src="images/bina/1.jpg" style="width: 100px">  
+                                      </div>
+                                        
+                                      <div class="right">
+                                          This is First Record    
+                                      </div>    
+                                     
+                                        <div class="clear"></div>    
+                                        
+                                    </div>
+                                    </label>
+                                    <label>
+                                        <div class="row">
+                                        
+                                          <div class="left">
+                                              <input type="checkbox" class="cb-element" value="1" id="bina3" onclick="myFunction()" />  
+                                              <img src="images/bina/1.jpg" style="width: 100px">  
+                                          </div>
+                                            
+                                          <div class="right">
+                                              This is First Record    
+                                          </div>    
+                                         
+                                            <div class="clear"></div>    
+                                            
+                                        </div>
+                                        </label>
+                                        <label>
+                                            <div class="row">
+                                            
+                                              <div class="left">
+                                                  <input type="checkbox" class="cb-element" value="1" id="bina4" onclick="myFunction()" />  
+                                                  <img src="images/bina/1.jpg" style="width: 100px">  
+                                              </div>
+                                                
+                                              <div class="right">
+                                                  This is First Record    
+                                              </div>    
+                                             
+                                                <div class="clear"></div>    
+                                                
+                                            </div>
+                                            </label>
+                                            <label>
+                                                <div class="row">
+                                                
+                                                  <div class="left">
+                                                      <input type="checkbox" class="cb-element" value="1" id="bina5" onclick="myFunction()" />  
+                                                      <img src="images/bina/1.jpg" style="width: 100px">  
+                                                  </div>
+                                                    
+                                                  <div class="right">
+                                                      This is First Record    
+                                                  </div>    
+                                                 
+                                                    <div class="clear"></div>    
+                                                    
+                                                </div>
+                                                </label>
+                                                <label>
+                                                    <div class="row">
+                                                    
+                                                      <div class="left">
+                                                          <input type="checkbox" class="cb-element" value="1" id="bina6" onclick="myFunction()" />  
+                                                          <img src="images/bina/1.jpg" style="width: 100px">  
+                                                      </div>
+                                                        
+                                                      <div class="right">
+                                                          This is First Record    
+                                                      </div>    
+                                                     
+                                                        <div class="clear"></div>    
+                                                        
+                                                    </div>
+                                                    </label>
+                                                    <label>
+                                                        <div class="row">
+                                                        
+                                                          <div class="left">
+                                                              <input type="checkbox" class="cb-element" value="1" id="bina7" onclick="myFunction()" />  
+                                                              <img src="images/bina/1.jpg" style="width: 100px">  
+                                                          </div>
+                                                            
+                                                          <div class="right">
+                                                              This is First Record    
+                                                          </div>    
+                                                         
+                                                            <div class="clear"></div>    
+                                                            
+                                                        </div>
+                                                        </label>
+                                                        <label>
+                                                            <div class="row">
+                                                            
+                                                              <div class="left">
+                                                                  <input type="checkbox" class="cb-element" value="1" id="bina8" onclick="myFunction()" />  
+                                                                  <img src="images/bina/1.jpg" style="width: 100px">  
+                                                              </div>
+                                                                
+                                                              <div class="right">
+                                                                  This is First Record    
+                                                              </div>    
+                                                             
+                                                                <div class="clear"></div>    
+                                                                
+                                                            </div>
+                                                            </label>
+                                                            <label>
+                                                                <div class="row">
+                                                                
+                                                                  <div class="left">
+                                                                      <input type="checkbox" class="cb-element" value="1" id="bina9" onclick="myFunction()" />  
+                                                                      <img src="images/bina/1.jpg" style="width: 100px">  
+                                                                  </div>
+                                                                    
+                                                                  <div class="right">
+                                                                      This is First Record    
+                                                                  </div>    
+                                                                 
+                                                                    <div class="clear"></div>    
+                                                                    
+                                                                </div>
+                                                                </label>
+
+                
+                
+                                                            </div>
+                
+                                                            
+            
+                                                        </div>  
+            
+                                                    </div>
+        </div>
+
+        <div class="hovermenu" id="buton" style="display:none">
+                <a href="#" class="Temizle" onclick="Clean()"><i class="fas fa-eraser fa-2x"></i></a>
+                <a href="kendirotanolustur.html" class="RotayiKaydet"><i class="fas fa-save fa-2x"></i></a>
+        </div>
+<div class="navbar2"></div>
+<div class="navbar">
+    <a href="anasayfa.html" class="rotalar"><img src="../templates/images/mapmarker.png" style="height:100%;"></a>
+    <a href="depom.html" class="depom"><img src="../templates/images/kutum.png" style="height:100%;"></a>
+    <a href="profil.html" class="profil"><img src="../templates/images/profil.png" style="height:100%;"></a>
+</div>
+</div>
+   
+    
+    <script src="scripts/libs/scripts/jquery-last.min.js"></script>
+    <script src="scripts/libs/scripts/ruby01.js"></script>
+    <script src="scripts/ruby/rubyanimate.js"></script>
+    <script src="scripts/ruby/rubytabs.js"></script>
+    <script>
+
+    function myFunction() {
+  // Get the checkbox
+  var bina1 = document.getElementById("bina1");
+  var bina2 = document.getElementById("bina2");
+  var bina3 = document.getElementById("bina3");
+  var bina4 = document.getElementById("bina4");
+  var bina5 = document.getElementById("bina5");
+  var bina6 = document.getElementById("bina6");
+  var bina7 = document.getElementById("bina7");
+  var bina8 = document.getElementById("bina8");
+  var bina9 = document.getElementById("bina9");
+  
+  // Get the output text
+  var text = document.getElementById("buton");
+
+  // If the checkbox is checked, display the output text
+  if (
+  bina1.checked == true || 
+  bina2.checked==true || 
+  bina3.checked==true || 
+  bina4.checked==true || 
+  bina5.checked==true || 
+  bina6.checked==true || 
+  bina7.checked==true || 
+  bina8.checked==true || 
+  bina9.checked==true)
+  {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+} 
+function Clean(){
+    document.getElementById("bina1").checked = false;
+    document.getElementById("bina2").checked = false;
+    document.getElementById("bina3").checked = false;
+    document.getElementById("bina4").checked = false;
+    document.getElementById("bina5").checked = false;
+    document.getElementById("bina6").checked = false;
+    document.getElementById("bina7").checked = false;
+    document.getElementById("bina8").checked = false;
+    document.getElementById("bina9").checked = false;
+    var text = document.getElementById("buton");
+
+    text.style.display="none";
+}
+    </script>
+ 
+</body>
+</html> 
+ 
+ 

@@ -1,0 +1,15 @@
+HTTrack3.49-2 launched on Mon, 06 Aug 2018 21:55:22 at https://haibach.net/rubytabs/templates/tabs-layout-device.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://haibach.net/rubytabs/templates/tabs-layout-device.html -O "/home/mkaanyesillik/Masaüstü/websites/tabs" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:57:43	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): https://haibach.net/rubytabs/ruby/rubytabs.js
+22:01:09	Error: 	"Not Found" (404) at link https://haibach.net/rubytabs/templates/slider-layout-fullscreen.html (from https://haibach.net/rubytabs/templates/)
+22:01:09	Error: 	"Not Found" (404) at link https://haibach.net/rubytabs/templates/.tabs-preview (from https://haibach.net/rubytabs/templates/tabs-layout-box.html)
+22:02:02	Error: 	"Not Found" (404) at link https://haibach.net/rubytabs/templates/imgs/tabs/icon.img.png (from https://haibach.net/rubytabs/libs/css/styles.custom.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 40 seconds : 236 links scanned, 232 files written (15808338 bytes overall) [14361632 bytes received at 35904 bytes/sec], 1895895 bytes transferred using HTTP compression in 78 files, ratio 16%, 4.4 requests per connection
+(3 errors, 1 warnings, 0 messages)

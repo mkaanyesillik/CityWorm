@@ -1,0 +1,311 @@
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #4FC3F7;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#4FC3F7;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-container-v {
+      background: #4FC3F7;
+    }
+    .menu {
+      min-width: 100px;
+      width: 70%;
+      max-width: 320px;
+
+      background-color: #4FC3F7;
+      color: #fff;
+    }
+    .content {
+      width: 100%;
+    }
+
+    .menu-button {
+      position: absolute;
+      top: 0px; left: 0px;
+
+      padding: 15px;
+
+      cursor: pointer;
+
+      -webkit-transition: .3s;
+      transition: .3s;
+
+      background-color: #4FC3F7;
+
+      /*margin: 14px;
+      border-radius: 5px;*/
+    }
+    .menu-button .bar:nth-of-type(1) {
+      margin-top: 0px;
+    }
+    .menu-button .bar:nth-of-type(3) {
+      margin-bottom: 0px;
+    }
+
+    .bar {
+      position: relative;
+      display: block;
+
+      width: 50px;
+      height: 5px;
+
+      margin: 10px auto;
+      background-color: #fff;
+
+      border-radius: 10px;
+
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
+
+    .menu-button:hover .bar:nth-of-type(1) {
+      -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+      -ms-transform: translateY(1.5px) rotate(-4.5deg);
+      transform: translateY(1.5px) rotate(-4.5deg);
+    }
+    .menu-button:hover .bar:nth-of-type(2) {
+      opacity: .9;
+    }
+    .menu-button:hover .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+      -ms-transform: translateY(-1.5px) rotate(4.5deg);
+      transform: translateY(-1.5px) rotate(4.5deg);
+    }
+
+    .cross .bar:nth-of-type(1) {
+      -webkit-transform: translateY(15px) rotate(-45deg);
+      -ms-transform: translateY(15px) rotate(-45deg);
+      transform: translateY(15px) rotate(-45deg);
+    }
+    .cross .bar:nth-of-type(2) {
+      opacity: 0;
+    }
+    .cross .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-15px) rotate(45deg);
+      -ms-transform: translateY(-15px) rotate(45deg);
+      transform: translateY(-15px) rotate(45deg);
+    }
+    .cross:hover .bar:nth-of-type(1) {
+      -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+      -ms-transform: translateY(13.5px) rotate(-40.5deg);
+      transform: translateY(13.5px) rotate(-40.5deg);
+    }
+    .cross:hover .bar:nth-of-type(2) {
+      opacity: .1;
+    }
+    .cross:hover .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+      -ms-transform: translateY(-13.5px) rotate(40.5deg);
+      transform: translateY(-13.5px) rotate(40.5deg);
+    }
+
+.rotalar {
+
+    background: yellow;
+    position: absolute;
+    left: 5%;
+  }
+ 
+  .depom {
+
+    background: yellow;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+ 
+  }
+  .profil {
+
+    background: yellow;
+    position: absolute;
+    right: 5%;
+  }
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-bottom:9px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ 
+}
+.navbar2 {
+ overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color:#2196F3;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff !important;
+  text-align: center;
+  width: 50%;
+  padding-bottom:10px;
+  padding-top: 10px;
+  background-color: #ffa633;;
+  width:55px;
+  height:60%;
+  border-radius: 50%;
+  
+}
+.row2 p {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  padding-bottom:10px;
+  padding-top: 10px;
+}
+
+.navbar a:hover {
+  background: #fff;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #fff;
+  color: white !important;
+}
+
+.main {
+  margin-bottom: 0px;
+}
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabs-preview > .rt01tabs.rt01pag {
+    margin-bottom: 0;position: fixed;top:45px;background-color: #fff;
+}
+.tabs-preview > .rt01viewport {
+    padding-top: 50px; padding-bottom: 50px;
+    background-color: #FFF8E1;
+}
+@media only screen and (max-width: 479px) {
+    .tabs-preview > .rt01viewport {
+        padding-top: 80px; padding-bottom: 35px;
+    }
+}
+.imagediv {
+position: relative;
+
+color: black;
+}
+.bottom-left {
+position: absolute;
+bottom: 12px;
+left: 16px;
+}
+
+/* Top left text */
+.top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+
+/* Top right text */
+.top-right {
+position: absolute;
+top: 8px;
+right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+position: absolute;
+bottom: 25px;
+right: 16px;
+}
+
+/* Centered text */
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: black;
+}

@@ -53,8 +53,8 @@
                         <div class="col4 col-xs-6">
                                 <div class="card-outline" style="border-radius: 25px">
                                     <div class="imagediv" style="z-index: 1">
-                                    <img class="rt01img card-thumbnail" src="images/bina/1.jpg" style="height: 165px;width: 100%"/>
-                                    <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
+                                    <img class="rt01img card-thumbnail" src="images/bina/1.jpg" style="height: 165px;width: 100%"/> 
+                                    <div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                     <div class="bottom-left" >
                                         <span style="background-color: transparent;text-align: left;color:white">
                                             <b><i>Rota</i></b>
@@ -65,7 +65,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                </a>
+                              
                             </div>
                         </div>  
                             </div>
@@ -93,7 +93,7 @@
                     <div class="col4 col-xs-6">
                             <div class="card-outline" style="border-radius: 25px">
                                 <div class="imagediv" style="z-index: 1">
-                                <img class="rt01img card-thumbnail" src="images/bina/2.jpeg" style="height: 165px;width: 100%"/>
+                                <img class="rt01img card-thumbnail" src="images/bina/2.jpg" style="height: 165px;width: 100%"/>
                                 <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                 <div class="bottom-left" >
                                     <span style="background-color: transparent;text-align: left;color:white">
@@ -116,7 +116,7 @@
            
 
             <div>
-                <div class="rt01pagitem" id="myBtn">
+                <div class="rt01pagitem" data-toggle="modal" data-target="#exampleModal">
                     İzmir
                 </div>
                 <div class="container">
@@ -124,7 +124,7 @@
                         <div class="col4 col-xs-6">
                                 <div class="card-outline" style="border-radius: 25px">
                                     <div class="imagediv" style="z-index: 1">
-                                    <img class="rt01img card-thumbnail" src="images/bina/4.jpeg" style="height: 165px;width: 100%"/>
+                                    <img class="rt01img card-thumbnail" src="images/bina/4.jpg" style="height: 165px;width: 100%"/>
                                     <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                     <div class="bottom-left" >
                                         <span style="background-color: transparent;text-align: left;color:white">
@@ -164,7 +164,7 @@
                                 <div class="col4 col-xs-6">
                                         <div class="card-outline" style="border-radius: 25px">
                                             <div class="imagediv" style="z-index: 1">
-                                            <img class="rt01img card-thumbnail" src="images/bina/2.jpeg" style="height: 165px;width: 100%"/>
+                                            <img class="rt01img card-thumbnail" src="images/bina/2.jpg" style="height: 165px;width: 100%"/>
                                             <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                             <div class="bottom-left" >
                                                 <span style="background-color: transparent;text-align: left;color:white">
@@ -181,24 +181,27 @@
                                 </div>  
                                     </div>
                                 </div>
-                                <div id="myModal" class="modal">
-                    
-                                        <!-- Modal content -->
-                                        <div class="modal-content">
-                                          <span class="close">&times;</span>
-                                          <div>
-                                                <h2>Şehir Seçiniz</h2>
-                                                <ul>
-                                                  <li><a href="#">İzmir</a></li>
-                                                  <li><a href="#">İstanbul</a></li>
-                                                  <li><a href="#">Ankara</a></li>
-                                                  <li><a href="#">Bursa</a></li>
-                                                  <li><a href="#">Antalya</a></li>
-                                                </ul>
-                                              </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel" style="float:left">Şehir Seçiniz</h5>
+                                          <button type="button" class="close" data-dismiss="modal" style="float:right" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <div style="clear:both"></div>
                                         </div>
-                                      
+                                        <div class="modal-body">
+                                        <ul>
+                                            <li>İzmir</li>
+                                            <li>İstanbul</li>
+                                            <li>Ankara</li>
+                                        </ul>
+                                        </div>
+                                        
                                       </div>
+                                    </div>
+                                  </div>
 
                 </div>
                 </div>
@@ -245,7 +248,7 @@
                             <div class="col4 col-xs-6">
                                     <div class="card-outline" style="border-radius: 25px">
                                         <div class="imagediv" style="z-index: 1">
-                                        <img class="rt01img card-thumbnail" src="images/bina/4.jpeg" style="height: 165px;width: 100%"/>
+                                        <img class="rt01img card-thumbnail" src="images/bina/4.jpg" style="height: 165px;width: 100%"/>
                                         <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                         <div class="bottom-left" >
                                             <span style="background-color: transparent;text-align: left;color:white">
@@ -311,7 +314,7 @@
                                             <div class="col4 col-xs-6">
                                                     <div class="card-outline" style="border-radius: 25px">
                                                         <div class="imagediv" style="z-index: 1">
-                                                        <img class="rt01img card-thumbnail" src="images/bina/4.jpeg" style="height: 165px;width: 100%"/>
+                                                        <img class="rt01img card-thumbnail" src="images/bina/4.jpg" style="height: 165px;width: 100%"/>
                                                         <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                                         <div class="bottom-left" >
                                                             <span style="background-color: transparent;text-align: left;color:white">
@@ -390,10 +393,10 @@
                                         </div>
                     
                                         <div class="col4 col-xs-6">
-                                                <div class="card-outline" style="border-radius: 25px">
+                                            <a href="rotaici/index.html" style="color:black">  <div class="card-outline" style="border-radius: 25px">
                                                     <div class="imagediv" style="z-index: 1">
-                                                    <img class="rt01img card-thumbnail" src="images/bina/2.jpeg" style="height: 165px;width: 100%"/>
-                                                    <a href="rotaici/index.html" style="color:black"><div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
+                                                    <img class="rt01img card-thumbnail" src="images/bina/2.jpg" style="height: 165px;width: 100%"/>
+                                                    <div style="background-color:#ffa633;height: 40px;bottom:0px;z-index: 2;position:absolute;width:100%;box-shadow: 0px -8px 5px #ffa633">
                                                     <div class="bottom-left" >
                                                         <span style="background-color: transparent;text-align: left;color:white">
                                                             <b><i>Rota</i></b>
@@ -404,9 +407,9 @@
                                                         </span>
                                                     </div>
                                                 </div>
-                                                </a>
+                                               
                                             </div>
-                                        </div>  
+                                        </div>  </a> 
                                             </div>
                     
                                             <div class="col4 col-xs-6">
@@ -448,32 +451,12 @@
     <script src="scripts/ruby/rubyanimate.js"></script> 
     <script src="scripts/ruby/rubytabs.js"></script>
     <script>
-        // Get the modal
-       var modal = document.getElementById('myModal');
-       
-       // Get the button that opens the modal
-       var btn = document.getElementById("myBtn");
-       
-       // Get the <span> element that closes the modal
-       var span = document.getElementsByClassName("close")[0];
-       
-       // When the user clicks on the button, open the modal
-       btn.click(function() {
-           modal.style.display = "block";
-       });
-       
-       
-       // When the user clicks on <span> (x), close the modal
-       spanon('click', function()  {
-           modal.style.display = "none";
-       });
-       
-       // When the user clicks anywhere outside of the modal, close it
-       window.on('click', function()  {
-           if (event.target == modal) {
-               modal.style.display = "none";
-           }
-       });
+     $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+
+  var modal = $(this)
+ 
+})
         </script>
 </body>
 </html>

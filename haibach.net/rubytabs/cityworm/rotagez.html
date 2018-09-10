@@ -106,36 +106,28 @@
         color:black;
         padding:10px;
     }
-.rotadetay {
-position: absolute;
-margin-left: auto;
-margin-right: auto;
-right: 80%;
-left:5%;
-}
-.rotases {
-position: absolute;
-margin-left: auto;
-margin-right: auto;
+    .rotases {
 
-right:55%;
-left:30%;
+background: yellow;
+position: absolute;
+left: 5%;
 }
+
 .rotaar {
 
+background: yellow;
 position: absolute;
 margin-left: auto;
 margin-right: auto;
-right: 30%;
-left:55%;
+left: 0;
+right: 0;
+
 }
 .rotareklam {
 
+background: yellow;
 position: absolute;
-margin-left: auto;
-margin-right: auto;
 right: 5%;
-left:80%;
 }
 
 .menuonplan {
@@ -292,6 +284,22 @@ display:inline-block;
 padding: 0;
 margin: 10px 10px 10px 10px !important;
 }
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+}
         </style>
     </head>
     <body style="background-color:#FFF8E1">
@@ -302,12 +310,12 @@ margin: 10px 10px 10px 10px !important;
             </div>
             <div style="padding:15px;padding-bottom:75px">
                 <h2>Rota Adı</h2>
-            <h3>Başlamadan Önce</h3>
+            <h3>Mekan Adı</h3>
                 
           <div style="height:200px;border-radius: 12px;padding:5px">
               <img src="images/bina/1.jpg" width="100%"height="100%">
           </div>
-            <div style="height: 200px;background-color:#fff; overflow-y: scroll;border-radius: 12px;padding:5px">
+            <div style="height: 200px;color:black; overflow-y: scroll;border-radius: 12px;padding:5px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nulla ut nulla tempor scelerisque eu sit amet libero. Nulla sit amet quam nec ante iaculis lacinia a quis eros. Nam hendrerit congue nisl quis pharetra. Cras bibendum mi tortor, molestie placerat dolor imperdiet et. Donec a elit odio. Curabitur viverra eleifend augue semper placerat. Mauris in felis vitae tellus vulputate tincidunt.
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean venenatis massa eu lorem molestie, in sodales ante laoreet. Fusce ornare metus at laoreet eleifend. Cras consequat, nisi sit amet pulvinar efficitur, lacus augue cursus urna, eu dictum risus elit nec erat. Curabitur risus nisl, auctor sit amet quam ut, molestie dictum velit. Sed nulla lacus, vestibulum laoreet nibh in, bibendum lobortis est. Phasellus aliquam sit amet est ac viverra. Suspendisse luctus quam fringilla ipsum finibus, nec pulvinar mauris blandit. Praesent quis mauris ligula. Sed ac eleifend nunc. Proin at elementum tortor, id volutpat quam. Praesent varius elementum ipsum et elementum. 
@@ -415,27 +423,25 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
         </div>
                                         <div style="height: 20px"></div>
             <br>
-            <a href="AR.html">
-        <input type="button" style="width:100%;height: 50px;border-radius: 12px;background-color:#9fcd6a;color:white" value="Gezmeye Başla">
+            <a href="satinalinmis.html">
+        <input type="button" style="width:100%;height: 50px;border-radius: 12px;background-color:#9fcd6a;color:white" value="Binayı Tamamladım">
     </a> </div>
         </div>
         <div style="height: 75px"></div>
         <div class="hovermenu" id="buton" >
             
-                <a href="#" class="KonumBildir"><i class="fas fa-thumbtack fa-2x"><br><font size="1">Yer Bildir</font></i></a>
-                <a href="#" class="Begen"><i class="fas fa-heart fa-2x"><br><font size="1">Beğen</font></i></a>
-                <a href="#" class="FotografCek"><i class="fas fa-camera fa-2x"><br><font size="1">Foto Çek</font></i></a>
+                <a href="yerbildir.html" class="KonumBildir"><i class="fas fa-thumbtack fa-2x"><br><font size="1">Yer Bildir</font></i></a>
+                <a href="#" class="Begen" id="begen" onclick="document.getElementById('begen').style['animation'] = 'bounce 2s'"><i class="fas fa-thumbs-up fa-2x"><br><font size="1">Beğen</font></i></a>
+                <a href="fotoacik.html" class="FotografCek"><i class="fas fa-camera fa-2x"><br><font size="1">Foto Çek</font></i></a>
         </div>
-        <a href="#" class="geri"><i class="fas fa-angle-left fa-3x"></i></a>
 
-        <a href="rotagez2.html" class="ileri"><i class="fas fa-angle-right fa-3x"></i></a>
+        <a href="araekran.html" class="ileri"><i class="fas fa-angle-right fa-3x"></i></a>
 
         <div class="menuarkaplan"></div>
             <div class="menuonplan">
-                <a href="satinalinmis.html" class="rotadetay"><i class="fas fa-info-circle fa-2x"><br><font size="1">Detay</font></i></a>
                 <a href="#" class="rotases"><i class="fas fa-volume-off fa-2x"><br><font size="1">Ses</font></i></a>
                 <a href="AR.html" class="rotaar"><i class="fas fa-globe fa-2x"></i><br><font size="1">AR</font></i></a>
-                <a href="poi.html" class="rotareklam"><i class="fas fa-video fa-2x"><br><font size="1">Video</font></i></a>
+                <a href="#" class="rotareklam"><i class="fas fa-video fa-2x"><br><font size="1">Video</font></i></a>
             </div>
 
         <script src="../libs/scripts/jquery-last.min.js"></script>

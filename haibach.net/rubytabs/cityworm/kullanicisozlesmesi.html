@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link
+        rel="stylesheet"
+        href="scripts/fontawesome/css/all.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/css/swiper.min.css"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="scripts/libs/imgs/icons/favicon.ico"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/fontawesome/css/all.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/libs/css/ruby00.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/libs/css/ruby01.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/libs/css/styles.custom.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/ruby/rubytabs.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="scripts/css/genel.css"
+    >
+
+    <script src="scripts/libs/scripts/modernizr.js"></script>
+</head>
+
+<body style="background-color:darkgray;border-radius: 15px">
+    <div class="wrapper">
+        <div style="border-top-right-radius: 25px;border-top-left-radius: 25px;background-color:#2196F3;height: 55px">
+            <center style="padding-top:15px">
+                <font size="5">Kullanıcı Sözleşmesi</font>
+
+                <a
+                    href="index.html"
+                    style="float:right;color:white;padding-right: 15px;text-decoration: none"
+                >
+                    <i class="fas fa-times-circle"></i>
+                </a>
+            </center>
+        </div>
+
+        <div style="border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;background-color:#FFF8E1;padding:15px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis tristique mi, ac aliquet nisl ultricies at. Praesent at erat mattis, lobortis massa ac, aliquam dui. Mauris ac diam nulla. Maecenas urna dolor, semper non bibendum nec, varius vitae erat. Integer elit lectus, laoreet non felis vel, luctus iaculis nibh. Etiam vitae facilisis lacus, sed dapibus odio. Etiam lacinia purus a nibh dapibus, in gravida augue pretium. Aenean tortor lorem, sollicitudin ut lectus quis, accumsan congue risus.
+ 
+            <br>
+        <br>
+            <center style="color:black"><input type="checkbox" id="onayla"  onclick="myFunction()"> <b for="onayla">Okudum Onayladım.</b></center><br>
+            <a href="anasayfa.html"><button type="submit" id="buton"  value="Devam Et" style="background-color: gray;width: 100%;height: 80px;border-radius: 12px;color:black">
+            Devam Et</button></a>
+        </div>
+    </div>
+    <script>
+
+        function myFunction() {
+      // Get the checkbox
+      var bina1 = document.getElementById("onayla");
+      
+      // Get the output text
+      var text = document.getElementById("buton");
+    
+      // If the checkbox is checked, display the output text
+      if (
+      bina1.checked == true)
+      {
+        text.style.backgroundColor="green";
+      } else {
+        text.style.backgroundColor="gray";
+      }
+    } 
+    function Clean(){
+        document.getElementById("bina1").checked = false;
+        var text = document.getElementById("buton");
+    }
+        </script>
+     
+</body>
+</html>

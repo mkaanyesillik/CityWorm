@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="../scripts/css/genel.css">
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="../scripts/js/jquery.mobile-events.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+  
     <meta name="robots" content="noindex,follow" />
     <style>
 			html, body {
@@ -50,7 +54,21 @@
 			  -ms-flex-align: center;
 			  -webkit-align-items: center;
 			  align-items: center;
-			}
+      }
+      .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #ffa633 !important;
+    opacity:.9 !important;
+    margin-bottom:10% !important;
+
+      }
+      .swiper-pagination-bullet-active{
+        opacity: 1;
+background: #007aff !important;
+      }
 		  </style>
 </head>
 
@@ -60,21 +78,24 @@
 			<div class="swiper-wrapper">
                 
 			  <div class="swiper-slide" style="background-image:url(../images/bina/1.jpg); background-repeat: no-repeat;
-              background-size: 100% 100%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+              background-size:250%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
                     <font size="5"> YÜKLE</font>
                    </div></a></div>
-			  <div class="swiper-slide"style="background-image:url(../images/bina/2.jpeg); background-repeat: no-repeat;
-              background-size: 100% 100%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
+			  <div class="swiper-slide"style="background-image:url(../images/bina/2.jpg); background-repeat: no-repeat;background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+              background-size: 180%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
                     <font size="5"> YÜKLE</font>
                    </div></a></div>
 			  <div class="swiper-slide"style="background-image:url(../images/bina/3.jpg); background-repeat: no-repeat;
               background-size: 100% 100%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
                     <font size="5"> YÜKLE</font>
                    </div></a></div>
-			  <div class="swiper-slide"style="background-image:url(../images/bina/4.jpeg); background-repeat: no-repeat;
-              background-size: 100% 100%;"><a href="../satinal.html" style="padding-bottom:100%"><div style="background-color:palegreen;border-radius: 12px;padding:5px;padding-left:10px;padding-right:10px;color:white">
-                    <font size="5"> YÜKLE</font>
-                   </div></a></div>
+			  <div class="swiper-slide"style="background-image:url(../images/sonresim.jpg); background-repeat: no-repeat;
+              background-size: 100% 100%;"><a href="../satinal.html" style="padding-bottom:100%"></a></div>
 
 			</div>
 			<div class="swiper-pagination" style="padding-bottom:50px"></div>
@@ -164,6 +185,7 @@ counter %= handlers.length;
 });
 
  </script>
+
     </body>
 
 </html>

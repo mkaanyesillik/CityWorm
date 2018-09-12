@@ -134,12 +134,11 @@ padding-bottom:0px;
             
             <form style="padding:15px">
                     Rota Adı:<br>
-                    <input type="text" style="width:100%;background-color: white;border-radius: 12px" name="firstname"><br>
+                    <input type="text" value="" id="deneme" style="width:100%;background-color: white;border-radius: 12px" name="firstname"><br>
                     Rota Açıklaması:<br>
-                    <textarea rows="4" cols="50" style="width: 100%;background-color:white;border-radius: 12px">
-                    </textarea> 
-                    <input type="button" value="Kaydet" style="width: 100%;background-color:#8BC34A;color:#fff;height: 60px;border-radius: 12px">
-                    <input type="button" value="Temizle" style="width: 100%;background-color:gray;color:black;height: 60px;border-radius: 12px">
+                    <textarea rows="4" id="output"cols="10" style="width: 100%;background-color:white;border-radius: 12px"></textarea> 
+                   <a href="rotakaydedildi.html"> <input type="button" value="Kaydet" style="width: 100%;background-color:#8BC34A;color:#fff;height: 60px;border-radius: 12px"></a>
+                    <input type="button" value="Temizle" id="clear" onclick="document.getElementById('deneme').value = ''" onclick="javascript:eraseText();" style="width: 100%;background-color:gray;color:black;height: 60px;border-radius: 12px">
                     <a href="kendirotan.html"><input type="button" value="Geri" style="width: 100%;background-color:rgb(104, 156, 43);color:black;height: 60px;border-radius: 12px"></a>
                   </form> 
         </div>
@@ -152,9 +151,9 @@ padding-bottom:0px;
         </div>
 <div class="navbar2"></div>
 <div class="navbar">
-    <a href="anasayfa.html" class="rotalar"><img src="../templates/images/mapmarker.png" style="height:100%;"></a>
-    <a href="depom.html" class="depom"><img src="../templates/images/kutum.png" style="height:100%;"></a>
-    <a href="profil.html" class="profil"><img src="../templates/images/profil.png" style="height:100%;"></a>
+    <a href="anasayfa.html" class="rotalar"><img src="images/mapmarker.png" style="height:100%;"></a>
+    <a href="depom.html" class="depom"><img src="images/kutum.png" style="height:100%;"></a>
+    <a href="profil.html" class="profil"><img src="images/profil.png" style="height:100%;"></a>
 </div>
 </div>
    
@@ -164,54 +163,13 @@ padding-bottom:0px;
     <script src="scripts/ruby/rubyanimate.js"></script>
     <script src="scripts/ruby/rubytabs.js"></script>
     <script>
+ var input = document.querySelector('#clear');
+var textarea = document.querySelector('#output');
 
-    function myFunction() {
-  // Get the checkbox
-  var bina1 = document.getElementById("bina1");
-  var bina2 = document.getElementById("bina2");
-  var bina3 = document.getElementById("bina3");
-  var bina4 = document.getElementById("bina4");
-  var bina5 = document.getElementById("bina5");
-  var bina6 = document.getElementById("bina6");
-  var bina7 = document.getElementById("bina7");
-  var bina8 = document.getElementById("bina8");
-  var bina9 = document.getElementById("bina9");
-  
-  // Get the output text
-  var text = document.getElementById("buton");
-
-  // If the checkbox is checked, display the output text
-  if (
-  bina1.checked == true || 
-  bina2.checked==true || 
-  bina3.checked==true || 
-  bina4.checked==true || 
-  bina5.checked==true || 
-  bina6.checked==true || 
-  bina7.checked==true || 
-  bina8.checked==true || 
-  bina9.checked==true)
-  {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none";
-  }
-} 
-function Clean(){
-    document.getElementById("bina1").checked = false;
-    document.getElementById("bina2").checked = false;
-    document.getElementById("bina3").checked = false;
-    document.getElementById("bina4").checked = false;
-    document.getElementById("bina5").checked = false;
-    document.getElementById("bina6").checked = false;
-    document.getElementById("bina7").checked = false;
-    document.getElementById("bina8").checked = false;
-    document.getElementById("bina9").checked = false;
-    var text = document.getElementById("buton");
-
-    text.style.display="none";
-}
-    </script>
+input.addEventListener('click', function () {
+    textarea.value = '';
+}, false);
+    </script>>
  
 </body>
 </html> 
